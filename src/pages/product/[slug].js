@@ -16,6 +16,7 @@ function SingleProduct({ product }) {
       </Head>
       <main>
         <Breadcrumb title={"Product"} />
+
         <div className="row g-3">
           <div className="col-lg-6">
             <div className="p-2">
@@ -30,6 +31,8 @@ function SingleProduct({ product }) {
           </div>
           <div className="col-lg-6">
             <h2>{product?.title}</h2>
+            <h6>Brand:{product?.brand}</h6>
+            <h6>rating:{product?.rating}</h6>
             <h4 className="card-title d-flex align-items-center">
               <BiRupee size={21} /> {product?.price}
             </h4>
